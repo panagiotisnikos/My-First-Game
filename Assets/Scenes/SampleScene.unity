@@ -225,7 +225,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: -0.793, z: 0}
-  m_LocalScale: {x: 9.093238, y: 1, z: 46.211884}
+  m_LocalScale: {x: 9.093238, y: 1, z: 79.595345}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -317,12 +317,11 @@ Transform:
   m_GameObject: {fileID: 330585543}
   serializedVersion: 2
   m_LocalRotation: {x: 0.21855874, y: 0.0065444317, z: -0.016694047, w: 0.9756591}
-  m_LocalPosition: {x: -0.05, y: 6.08, z: -24.72}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: -0.070000015, y: 2.4550004, z: -1.9649992}
+  m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 568742917}
-  m_Father: {fileID: 0}
+  m_Children: []
+  m_Father: {fileID: 568742917}
   m_LocalEulerAnglesHint: {x: 25.258, y: 0.347, z: -1.883}
 --- !u!114 &330585547
 MonoBehaviour:
@@ -550,7 +549,7 @@ BoxCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 568742912}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: 9e7e8eddd795a914399739f3f697e5c2, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -628,12 +627,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 568742912}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.21855874, y: -0.0065444317, z: 0.016694047, w: 0.9756591}
-  m_LocalPosition: {x: 0.20694387, y: -2.7580242, z: 5.6500506}
+  m_LocalRotation: {x: -0, y: -0, z: -8.1490714e-10, w: 1}
+  m_LocalPosition: {x: 0, y: 0.7, z: -37.53}
   m_LocalScale: {x: 2, y: 2, z: 2}
   m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 330585546}
+  m_Children:
+  - {fileID: 330585546}
+  m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &568742918
 MonoBehaviour:
@@ -648,6 +648,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::playerMovement
   rb: {fileID: 568742913}
+  forwardForce: 500
+  sidewaysForce: 50
 --- !u!1 &832575517
 GameObject:
   m_ObjectHideFlags: 0
@@ -701,7 +703,7 @@ Transform:
 SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
-  - {fileID: 330585546}
   - {fileID: 410087041}
+  - {fileID: 568742917}
   - {fileID: 832575519}
   - {fileID: 76778277}
