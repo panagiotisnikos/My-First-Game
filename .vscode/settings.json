@@ -67,5 +67,8 @@
         "*.sln": "*.csproj",
         "*.slnx": "*.csproj"
     },
-    "dotnet.defaultSolution": "My First Game.slnx"
+    "dotnet.defaultSolution": "My First Game.slnx",
+    "github.copilot.enable": {
+        "*": false
+    }
 }
