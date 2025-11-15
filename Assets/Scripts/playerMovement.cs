@@ -9,13 +9,15 @@ public class playerMovement : MonoBehaviour
     void Start()
     {
         //rb.useGravity = false;
-        rb.AddForce(0, 0, forwardForce); // (x,y,z)
+ 
         
     }
 
     // Update is called once per frame
     void FixedUpdate()
     {
+        //συνεχής κίνηση προς τα εμπρός
+        rb.AddForce(0, 0, forwardForce); // (x,y,z)
         //αυτό το ξεχνάμε
         if (Input.GetKey("d"))
         {
