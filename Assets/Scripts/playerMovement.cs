@@ -6,6 +6,7 @@ public class playerMovement : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     public float forwardForce = 2000f;
     public float sidewaysForce = 500f;
+    public float jumpForce = 2f;
     void Start()
     {
         //rb.useGravity = false;
@@ -27,6 +28,10 @@ public class playerMovement : MonoBehaviour
        if (Input.GetKey("a"))
          {
             rb.AddForce(-sidewaysForce * Time.deltaTime, 0, 0, ForceMode.VelocityChange);
+        }
+         if (Input.GetKey("space"))
+         {
+            rb.AddForce(0, jumpForce, 0, ForceMode.Impulse);
         }
     }
 }
