@@ -69,6 +69,10 @@
     },
     "dotnet.defaultSolution": "My First Game.slnx",
     "github.copilot.enable": {
-        "*": false
+        "*": false,
+        "plaintext": false,
+        "markdown": false,
+        "scminput": false,
+        "csharp": true
     }
 }
