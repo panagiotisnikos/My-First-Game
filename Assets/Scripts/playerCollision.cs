@@ -12,6 +12,13 @@ public class playerCollision : MonoBehaviour
         {
             Debug.Log("We hit an obstacle! Ouch!");
             movement.enabled = false;
+            gameManager gm = FindObjectOfType<gameManager>();
+            gm.GetComponent<gameManager>().EndLevel();
+        }
+        if (collisionInfo.collider.name == "Floor")
+        {
+            //Debug.Log("We hit the floor!");
+            //is
         }
     }
 }
